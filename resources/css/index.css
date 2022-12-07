@@ -22,12 +22,40 @@ header > h1 {
     color: #22223B;
 }
 
-
-
-#character-card {
+.character-card {
     background-color: #4A4E69;
-    width: 33%;
+    width: 27%;
     height: 500px;
     margin: 3rem auto;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.character-card > .character-image {
+    width: 85%;
+    height: 60%;
+    margin: 0 auto;
+    background-image: url('../images/ogre.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.character-card > .description {
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #22223B;
+    font-size: 1.1rem;
+}
+
+.character-card > .description > p {
+    margin-left: 0.4rem;
 }
