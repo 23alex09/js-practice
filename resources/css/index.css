@@ -1,0 +1,23 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #F2E9E4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+header > img {
+    width: 4rem;
+    height: auto;
+    display: block;
+}
+
+header > h1 {
+    font-size: 3rem;
+    color: #22223B;
+}
