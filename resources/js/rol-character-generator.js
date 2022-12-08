@@ -15,3 +15,15 @@ const characterFactory = (breeds, jobs, attributes) => {
         attribute
     }
 }
+
+const setCharacterDescription = () => {
+    let randomCharacter = characterFactory(breeds, jobs, attributes);
+    let descriptionItems = document.getElementById('main-card-description').children;
+
+    descriptionItems[0].innerHTML = `Breed: ${randomCharacter.breed}`;
+    descriptionItems[1].innerHTML = `Occupation: ${randomCharacter.job}`;
+    descriptionItems[2].innerHTML = `Attribute: ${randomCharacter.attribute}`;
+}
+
+const generateButton = document.getElementById('button-generate');
+generateButton.addEventListener('click', setCharacterDescription);

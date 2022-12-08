@@ -38,16 +38,18 @@ header > h1 {
     width: 85%;
     height: 60%;
     margin: 0 auto;
-    background-image: url('../images/ogre.jpeg');
+    /*background-image: url('../images/ogre.jpeg');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    border: 1px solid #C9ADA7;
 }
 
 .character-card > .description {
     width: 85%;
+    height: 130.357px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.25);
     border-bottom-left-radius: 1rem;
@@ -58,4 +60,28 @@ header > h1 {
 
 .character-card > .description > p {
     margin-left: 0.4rem;
+}
+
+#button-generate {
+    margin: auto;
+    width: 15%;
+    height: 2.5rem;
+    display: block;
+    background-color: #F2E9E4;
+    color: #22223B;
+    border: 2px solid #4A4E69;
+    border-radius: 5px;
+    box-shadow: 5px 5px #4A4E69;
+    transition: background-color 1s;
+}
+
+#button-generate:hover {
+    background-color: #c5beba;
+}
+
+#button-generate:active {
+    background-color: #c5beba;
+    border: 2px solid #22223B;
+    box-shadow: 2px 2px #22223B;
+    transform: translateX(3px) translateY(3px);
 }
