@@ -25,7 +25,7 @@ header > h1 {
 .character-card {
     background-color: #4A4E69;
     width: 27%;
-    height: 500px;
+    aspect-ratio: 5 / 7;
     margin: 3rem auto;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -34,7 +34,7 @@ header > h1 {
     justify-content: space-evenly;
 }
 
-.character-card > .character-image {
+.character-card > #character-image {
     width: 85%;
     height: 60%;
     margin: 0 auto;

@@ -16,9 +16,16 @@ const characterFactory = (breeds, jobs, attributes) => {
     }
 }
 
-const setCharacterDescription = () => {
+const setCharacterCard = () => {
     let randomCharacter = characterFactory(breeds, jobs, attributes);
+    let characterImage = document.getElementById('character-image');
     let descriptionItems = document.getElementById('main-card-description').children;
+
+    if (randomCharacter.breed != 'No muerto' && randomCharacter.breed != 'Gnomo') {
+        characterImage.style.backgroundImage = `url(resources/images/${randomCharacter.breed.toLowerCase()}.jpeg)`;
+    } else {
+        characterImage.style.backgroundImage = `url(resources/images/${randomCharacter.breed.toLowerCase()}.webp)`;
+    }
 
     descriptionItems[0].innerHTML = `Breed: ${randomCharacter.breed}`;
     descriptionItems[1].innerHTML = `Occupation: ${randomCharacter.job}`;
@@ -26,4 +33,4 @@ const setCharacterDescription = () => {
 }
 
 const generateButton = document.getElementById('button-generate');
-generateButton.addEventListener('click', setCharacterDescription);
+generateButton.addEventListener('click', setCharacterCard);
